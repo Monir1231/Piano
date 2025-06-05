@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Edu QLD Hand", cursive;
+}
+
+body {
+  background: url(./img/pexels-photo-1107717.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  
+  
+ 
+}
+
+h2{
+   font-size: 60px; 
+   color: aliceblue;
+   padding: 1px 0;
+  font-style: italic;
+}
+
+.piano{
+  display: flex;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.key{
+  display: flex;
+  justify-content: center;
+  
+  align-items: flex-end;
+  padding: 10px;
+  color: rgb(157,160,16);
+  transition:0.1s tranform ease-out;
+}
+
+.white{
+  background-color: white;
+  width: 50px;
+  height: 250px;
+  border-radius: 7px;
+}
+
+.black{
+  background-color: black;
+  width: 45px;
+  height: 110px;
+  border-radius: 5px;
+  margin-left: -22px;
+  margin-right: -22px;
+  z-index: 1;
+}
+
+.active{
+  background: linear-gradient(180deg, #B1B1E9FF 0%, #6862ECFF 100%);
+  margin-top: 2px;
+  transform: translateY(4px);
+}
+
+
+
+@media screen and (max-width: 815px) {
+  h2{
+   font-size: 40px; 
+   color: aliceblue;
+   padding: 10px 0;
+  font-style: italic;
+}
+
+.piano{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: none;
+  padding: 20px;
+  border-radius: 15px;
+ 
+}
+
+.key{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  color: rgb(157,160,16);
+  transition:0.1s tranform ease-out;
+}
+
+.white{
+  background-color: white;
+  width: 60px;
+  height: 180px;
+  border-radius: 7px;
+  
+}
+
+.black{
+  background-color: black;
+  width: 30px;
+  height: 90px;
+  border-radius: 5px;
+  margin-left: -22px;
+  margin-right: -22px;
+  z-index: 1;
+  
+}
+
+
+}
+
+
+
